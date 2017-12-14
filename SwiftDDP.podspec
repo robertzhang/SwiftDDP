@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'CryptoSwift', '~> 0.7.1'
   s.dependency 'SwiftWebSocket', '~> 2.6.5'
-  s.dependency 'XCGLogger'
+  s.dependency 'XCGLogger', '~> 5.0.1'
 
 end
