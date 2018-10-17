@@ -211,11 +211,11 @@ open class DDPClient: NSObject {
                     
                     
                     // Resubscribe to existing subs on connection to ensure continuity
-                    self.subscriptions.forEach({ (subscription: (String, (id: String, name: String, ready: Bool))) -> () in
-                        if subscription.1.name != loginServiceConfiguration {
-                            self.sub(subscription.1.id, name: subscription.1.name, params: nil, callback: nil)
-                        }
-                    })
+//                     self.subscriptions.forEach({ (subscription: (String, (id: String, name: String, ready: Bool))) -> () in
+//                         if subscription.1.name != loginServiceConfiguration {
+//                             self.sub(subscription.1.id, name: subscription.1.name, params: nil, callback: nil)
+//                         }
+//                     })
                     callback?(session)
                 }
                 
